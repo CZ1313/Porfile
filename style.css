@@ -5932,6 +5932,16 @@ footer {
 	list-style: none !important;
 }
 
+div.wpcf7 {
+	max-width: 450px;
+	margin: 0 auto;
+  }
+  div.wpcf7 input:not([type="checkbox"]),
+  div.wpcf7 textarea {
+	width: 100%;
+	height:90%
+  }
+  
 .contact-container{
 	background-color: red;
 	padding:20px;
