@@ -39,4 +39,17 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 			<?php echo $description; // phpcs:ignore WordPress.Security.EscapeOutput ?>
 		</p>
 	<?php endif; ?>
+	<div class="footerContainer">
+		  <div class= "row">
+
+        <!--Footer Logo using widget-->
+        <div class="header-resume">
+           <?php
+               if(is_active_sidebar('header-resume')){
+                dynamic_sidebar('header-resume');
+                 }
+               ?>
+        </div>
+      </div><!-- end row -->
+	  <div><!-- end container -->	
 </div><!-- .site-branding -->

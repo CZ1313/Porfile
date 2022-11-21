@@ -780,7 +780,7 @@ template {
  * Top Level Wrappers (header, main, footer)
  * - Set vertical padding and horizontal margins
  */
-.site-header,
+
 .site-main,
 .widget-area,
 .site-footer {
@@ -790,9 +790,15 @@ template {
 	margin-right: auto;
 }
 
+.site-header{
+	padding-top: var(--global--spacing-vertical);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .site-header {
 	padding-top: calc(0.75 * var(--global--spacing-vertical));
-	padding-bottom: calc(2 * var(--global--spacing-vertical));
+	/* padding-bottom: calc(2 * var(--global--spacing-vertical)); */
 }
 @media only screen and (min-width: 482px) {
 
@@ -4612,6 +4618,7 @@ h1.page-title {
 	line-height: 1.15;
 	margin-top: 0;
 	margin-bottom: 0;
+
 }
 
 .primary-navigation > .primary-menu-container {
@@ -4719,13 +4726,13 @@ h1.page-title {
 
 .primary-navigation > div > .menu-wrapper {
 	display: flex;
-	justify-content: flex-start;
 	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	max-width: none;
 	padding-left: 0;
 	position: relative;
+	justify-content: center;
 }
 @media only screen and (max-width: 481px) {
 

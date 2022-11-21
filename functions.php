@@ -385,6 +385,15 @@ register_sidebar(
 		'id'          => 'social-media-widget',
 	)
 );
+
+// Header Widget.
+register_sidebar(
+	array(
+		'name'        => __( 'header-resume', 'portfolio' ),
+		'id'          => 'header-resume',
+	)
+);
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
