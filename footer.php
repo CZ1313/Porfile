@@ -23,7 +23,7 @@
 		  <div class= "row">
 
         <!--Footer Logo using widget-->
-        <div class="col-md-12 col-lg-2 col-xl-2 col-xxl-3 footer-logo">
+        <div class="footer-logo">
            <?php
                if(is_active_sidebar('footer-logo')){
                 dynamic_sidebar('footer-logo');
@@ -32,7 +32,7 @@
         </div>
 
         <!--Footer Social Media using widget-->
-			  <div class="col-md-12 col-lg-2 col-xl-2 col-xxl-3 social-media">
+			  <div class="social-icons">
           <?php
                if(is_active_sidebar('social-media-widget')){
                 dynamic_sidebar('social-media-widget');
