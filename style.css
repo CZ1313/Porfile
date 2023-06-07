@@ -5924,8 +5924,32 @@ footer {
 
 /** My CSS */
 
-.about-me-section, .contact-me-section{
-		width:60vw}
+ @media screen and (min-width: 782px) and (max-width:1340px){
+	.about-me-section{
+		
+}
+
+.my-image{
+	width:35vw;
+	
+	
+}
+
+.my-bio{
+	
+}
+
+.image-bio-column{
+	display:flex;
+	flex-direction: column;
+}
+}
+
+/* @media screen and (min-width: 3000px) and (max-width: 3657px){
+	.about-me-section, .contact-me-section{
+		margin:auto;
+	width:35%;} */
+
 
 .footerContainerbottom{
     margin:auto;
@@ -6064,6 +6088,21 @@ body{
     min-height: 100vh;
     background-color: #ffffff;
 }
+
+#top, #bottom, #left, #right {
+	background: #000000;
+	position: fixed;
+	}
+		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 35px;
+	}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+
 
 footer{
 	padding-top: 40px;
