@@ -378,11 +378,11 @@ register_sidebar(
 	)
 );
 
-// Footer Social Media Widget.
+// Footer Menu Widget.
 register_sidebar(
 	array(
-		'name'        => __( 'social-icons', 'portfolio' ),
-		'id'          => 'social-media-widget',
+		'name'        => __( 'footer-menu', 'portfolio' ),
+		'id'          => 'footer-menu-widget',
 	)
 );
 

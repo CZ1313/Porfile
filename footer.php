@@ -20,10 +20,16 @@
 
 	<footer>
     <div class="footerContainer">
-		  <div class= "row">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
 
+		  <div class= "row">
         <!--Footer Logo using widget-->
-        <div class="col-md-12 col-lg-2 col-xl-2 col-xxl-3 footer-logo">
+        <div class="footer-logo">
            <?php
                if(is_active_sidebar('footer-logo')){
                 dynamic_sidebar('footer-logo');
@@ -32,10 +38,10 @@
         </div>
 
         <!--Footer Social Media using widget-->
-			  <div class="col-md-12 col-lg-2 col-xl-2 col-xxl-3 social-media">
+			  <div class="footer-menu">
           <?php
-               if(is_active_sidebar('social-media-widget')){
-                dynamic_sidebar('social-media-widget');
+               if(is_active_sidebar('footer-menu-widget')){
+                dynamic_sidebar('footer-menu-widget');
                  }
                ?>
         </div>

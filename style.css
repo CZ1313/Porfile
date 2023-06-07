@@ -781,11 +781,16 @@ template {
  * - Set vertical padding and horizontal margins
  */
 
-.site-main,
+
 .widget-area,
 .site-footer {
 	padding-top: var(--global--spacing-vertical);
 	padding-bottom: var(--global--spacing-vertical);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-main{
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -5918,69 +5923,218 @@ footer {
 }
 
 /** My CSS */
-.footerContainer{
-	margin:auto;
-	padding:20px;
+
+.footerContainerbottom{
+    margin:auto;
 }
 
-.social-media{
-	list-style:none !important;
-
-}
-
-.footer-logo{
-	list-style: none !important;
+.wpcf7{
+    height: 50% !important;
 }
 
 div.wpcf7 {
-	max-width: 550px;
-	margin: 0 auto;
-	padding: 20px 30px 10px 10px;
+    max-width: 550px;
+    margin: 0px auto auto auto !important;
+    padding: 20px 30px 10px 10px;
   }
+
   div.wpcf7 input:not([type="checkbox"]),
   div.wpcf7 textarea {
-	width: 100%;
-	height:90%;
-	margin: 10px;
-	background: rgba(255, 255, 255, 0.6);
-	border:none;
-	padding:10px;
-	border-radius: 10px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-right: 1px solid rgba(255, 255, 255, 0.2);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	font-size: 18px;
-	letter-spacing: 1px;
-	color:black;
-	box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height:30%;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border:none;
+    padding:10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:black;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.3);
   }
 
   textarea.wpcf7-form-control:focus{
-	background: rgba(255, 255, 255, 0.6);
-	color:black;
+    background: rgba(255, 255, 255, 0.6);
+    color:black;
   }
 
   .wpcf7-form-control.wpcf7-submit {
-	background-color: #009960;
-	color: #fff;
-	padding: 6px 20px;
+    background-color: #009960;
+    color: #fff;
+    padding: 6px 20px;
  }
   
   input.wpcf7-form-control.wpcf7-submit:hover {
-	background-color:  rgb(91, 60, 124);
-	color:white;
-	}
+    background-color:  rgb(91, 60, 124);
+    color:white;
+    }
 
 .contact-container{
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(5px);
-	box-shadow: 0 25px 45px rgba(1, 34, 31, 0.651);
-	border-radius: 15px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-right: 1px solid rgba(255, 255, 255, 0.2);
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 550px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(1, 34, 31, 0.651);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer{
-	/* background-color: rgb(0, 0, 0); */
+.contact-container > p{
+    margin:0 !important;
 }
+
+.social-media-container{
+    width:100%;
+    margin:auto;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(1, 34, 31, 0.651);
+    border-radius: 55px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contact-social-media-col-container{
+    justify-content: center;
+}
+
+.footer-menu{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+}
+
+.footer-menu > li{
+    display:inline-block;
+}
+
+#menu-footer-menu > li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin:10px 0;
+    flex-wrap: wrap;
+}
+
+#menu-footer-menu > li> a, #primary-menu-list > li > a{
+    text-decoration: none;
+    padding:10px;
+    opacity:0.75;
+}
+
+#menu-footer-menu > li> a:hover, #primary-menu-list > li > a:hover{
+opacity:1;
+}
+
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram, 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-github, 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin{
+    background-color:white;
+    color:black;
+    transition:0.5s;
+    display:inline-block;
+    margin:0px 10px 0px 10px;
+    
+    
+}
+
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram:hover, 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-github:hover, 
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin:hover{
+transform:translateY(-10px);
+}
+
+.footer-logo{
+    list-style: none;
+}
+
+body{
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+footer{
+	padding-top: 40px;
+	padding-bottom:40px;
+    position:relative;
+    width:100%;
+	background: rgb(254,254,254);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wave{
+    position:absolute;
+    top:-100px;
+    left:0;
+    width:100%;
+    height:100px;
+    background:url(./assets/images/wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1
+{
+    z-index:1000;
+    opacity:1;
+    bottom:0;
+    animation: animateWave 4s linear infinite;
+
+}
+
+footer .wave#wave2{
+    z-index:999;
+    opacity:0.5;
+    bottom:10px;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3{
+    z-index:1000;
+    opacity:0.2;
+    bottom:15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4{
+    z-index:999;
+    opacity:0.7;
+    bottom:20px;
+    animation: animateWave_02 3s linear infinite;
+}
+
+
+@keyframes animateWave 
+{
+ 0%
+ {
+    background-position-x:1000px;
+ }
+ 100%
+ {
+    background-position-x: 0px;
+ }
+}
+
+@keyframes animateWave_02 
+{
+ 0%
+ {
+    background-position-x:1000px;
+ }
+ 100%
+ {
+    background-position-x: 0px;
+ }
+}
+
