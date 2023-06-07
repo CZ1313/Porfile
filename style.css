@@ -5924,6 +5924,9 @@ footer {
 
 /** My CSS */
 
+.about-me-section, .contact-me-section{
+		width:60vw}
+
 .footerContainerbottom{
     margin:auto;
 }
@@ -6056,8 +6059,8 @@ transform:translateY(-10px);
 
 body{
     display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: #ffffff;
 }
