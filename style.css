@@ -5924,11 +5924,6 @@ footer {
 
 /** My CSS */
 
-.about-me-section, .contact-me-section{
-    border-color: red;
-    border: 20px;
-}
-
 .footerContainerbottom{
     margin:auto;
 }
