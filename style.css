@@ -5942,6 +5942,39 @@ footer {
 
 }
 
+.my-sub-headlines{
+	color:white !important;
+	font-weight: bolder;
+	background: rgb(255,255,255);
+	background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(190,180,169,1) 27%, rgba(80,112,120,1) 56%, rgba(58,76,92,1) 85%, rgba(52,64,83,1) 100%);	padding:5px;
+}
+
+@media screen and (min-width: 279px) and (max-width:624px){
+	.my-sub-headlines{
+		font-size:20px !important;
+		display:flex;
+		justify-content: center;
+	}
+
+	.portfolio-heading{
+		font-size:50px !important;
+		display:flex;
+		justify-content: center;
+	}
+
+}
+@media screen and (min-width: 625px) and (max-width:781px){
+	.my-sub-headlines{
+			font-size:30px !important;
+			display:flex;
+			justify-content: center;
+		}
+		.portfolio-heading{
+			display:flex;
+			justify-content: center;
+		}
+}
+
 @media screen and (min-width: 279px) and (max-width:781px){
 	.site-branding {
 		display:flex;
@@ -5955,12 +5988,7 @@ footer {
 		justify-content: center;
 		margin:20px auto auto auto;
 	}
-	#my-portfolio{
-		font-size:55px !important;
-		display:flex;
-		justify-content: center;
-	}
-
+	
 	#About-Me{
 		font-size:55px !important;
 	}
@@ -6167,7 +6195,7 @@ footer{
 	padding-bottom:40px;
     position:relative;
     width:100%;
-	background: rgb(254,254,254);
+	background: rgb(255, 255, 255) !important;
     display:flex;
     justify-content: center;
     align-items: center;
