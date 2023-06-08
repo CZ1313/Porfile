@@ -6004,6 +6004,18 @@ footer {
 	.wp-block-social-links{
 		font-size:20px !important;
 	}
+
+	#menu-footer-menu{
+		margin:25px 50px 25px 50px;
+		align-items: center;
+		display:flex;
+		flex-direction: column;
+
+	}
+	#menu-footer-menu > li{
+		margin:0px !important;
+		padding:2px;
+	}
 }
 
  @media screen and (min-width: 782px) and (max-width:1340px){
