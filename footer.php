@@ -53,5 +53,7 @@
 
 <?php wp_footer(); ?>
 
+<div id="top"></div>
+<div id="bottom"></div>
 </body>
 </html>

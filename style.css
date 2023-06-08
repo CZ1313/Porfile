@@ -3853,9 +3853,9 @@ table.wp-calendar-table caption {
 		justify-content: space-between;
 	}
 
-	.site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
+	/* .site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
 		max-width: calc(100% - 160px);
-	}
+	} */
 
 	.site-header.has-logo.has-title-and-tagline .site-branding {
 		margin-right: 0;
@@ -3879,7 +3879,7 @@ table.wp-calendar-table caption {
 	body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .menu-button-container #primary-mobile-menu {
 		padding-left: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
 		padding-right: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
-		margin-right: calc(0px - var(--global--spacing-horizontal) * 0.6);
+		/* margin-right: calc(0px - var(--global--spacing-horizontal) * 0.6); */
 	}
 
 	.site-header:not(.has-logo).has-title-and-tagline .site-branding {
@@ -5924,6 +5924,119 @@ footer {
 
 /** My CSS */
 
+
+.portfolio-group{
+
+	border-left:solid 5px;
+	border-right:solid 5px;
+	border-top:dashed 5px;
+	border-bottom: dashed 5px;
+	border-color:black;
+	
+	padding:20px;
+}
+
+.portfolio-group-2{
+	background-color: #a4bac5;
+	border-bottom:dashed 5px;
+
+}
+
+.my-sub-headlines{
+	color:white !important;
+	font-weight: bolder;
+	background: rgb(255,255,255);
+	background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(190,180,169,1) 27%, rgba(80,112,120,1) 56%, rgba(58,76,92,1) 85%, rgba(52,64,83,1) 100%);	padding:5px;
+}
+
+@media screen and (min-width: 279px) and (max-width:624px){
+	.my-sub-headlines{
+		font-size:20px !important;
+		display:flex;
+		justify-content: center;
+	}
+
+	.portfolio-heading{
+		font-size:50px !important;
+		display:flex;
+		justify-content: center;
+	}
+
+}
+@media screen and (min-width: 625px) and (max-width:781px){
+	.my-sub-headlines{
+			font-size:30px !important;
+			display:flex;
+			justify-content: center;
+		}
+		.portfolio-heading{
+			display:flex;
+			justify-content: center;
+		}
+}
+
+@media screen and (min-width: 279px) and (max-width:781px){
+	.site-branding {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.primary-navigation{
+		padding-top:20px;
+	}
+	#primary-mobile-menu{
+		justify-content: center;
+		margin:20px auto auto auto;
+	}
+	
+	#About-Me{
+		font-size:55px !important;
+	}
+
+	#contact-me, .social-media-container{
+		font-size:35px !important;
+	}
+
+	.my-bio > p{
+		padding: 0px !important;
+	}
+
+	.wp-block-social-links{
+		font-size:20px !important;
+	}
+}
+
+ @media screen and (min-width: 782px) and (max-width:1340px){
+	.about-me-section{
+}
+
+.image-bio-column{
+	display:flex;
+	flex-direction: column;
+}
+
+.my-image{
+	width:35vw;
+	margin:auto;
+}
+
+.my-image-column{
+}
+
+.my-bio{
+}
+
+}
+.about-me-section, .contact-me-section{
+	width:80%;
+	margin:auto;
+	padding:70px 0px 70px 0px;
+}
+
+.contact-me-section{
+			
+}
+
 .footerContainerbottom{
     margin:auto;
 }
@@ -6056,18 +6169,33 @@ transform:translateY(-10px);
 
 body{
     display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: #ffffff;
 }
+
+#top, #bottom, #left, #right {
+	background: #000000;
+	position: fixed;
+	}
+		
+#top, #bottom {
+	left: 0; right: 0;
+	height: 35px;
+	}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+
 
 footer{
 	padding-top: 40px;
 	padding-bottom:40px;
     position:relative;
     width:100%;
-	background: rgb(254,254,254);
+	background: rgb(255, 255, 255) !important;
     display:flex;
     justify-content: center;
     align-items: center;
