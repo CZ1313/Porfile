@@ -3853,9 +3853,9 @@ table.wp-calendar-table caption {
 		justify-content: space-between;
 	}
 
-	.site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
+	/* .site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
 		max-width: calc(100% - 160px);
-	}
+	} */
 
 	.site-header.has-logo.has-title-and-tagline .site-branding {
 		margin-right: 0;
@@ -3879,7 +3879,7 @@ table.wp-calendar-table caption {
 	body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .menu-button-container #primary-mobile-menu {
 		padding-left: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
 		padding-right: calc(var(--global--spacing-horizontal) * 0.6 - 4.5px);
-		margin-right: calc(0px - var(--global--spacing-horizontal) * 0.6);
+		/* margin-right: calc(0px - var(--global--spacing-horizontal) * 0.6); */
 	}
 
 	.site-header:not(.has-logo).has-title-and-tagline .site-branding {
@@ -5924,32 +5924,90 @@ footer {
 
 /** My CSS */
 
+
+.portfolio-group{
+
+	border-left:solid 5px;
+	border-right:solid 5px;
+	border-top:dashed 5px;
+	border-bottom: dashed 5px;
+	border-color:black;
+	
+	padding:20px;
+}
+
+.portfolio-group-2{
+	background-color: #a4bac5;
+	border-bottom:dashed 5px;
+
+}
+
+@media screen and (min-width: 279px) and (max-width:781px){
+	.site-branding {
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.primary-navigation{
+		padding-top:20px;
+	}
+	#primary-mobile-menu{
+		justify-content: center;
+		margin:20px auto auto auto;
+	}
+	#my-portfolio{
+		font-size:55px !important;
+		display:flex;
+		justify-content: center;
+	}
+
+	#About-Me{
+		font-size:55px !important;
+	}
+
+	#contact-me, .social-media-container{
+		font-size:35px !important;
+	}
+
+	.my-bio > p{
+		padding: 0px !important;
+	}
+
+	.wp-block-social-links{
+		font-size:20px !important;
+	}
+}
+
  @media screen and (min-width: 782px) and (max-width:1340px){
 	.about-me-section{
-		
-}
-
-.my-image{
-	width:35vw;
-	
-	
-}
-
-.my-bio{
-	
 }
 
 .image-bio-column{
 	display:flex;
 	flex-direction: column;
 }
+
+.my-image{
+	width:35vw;
+	margin:auto;
 }
 
-/* @media screen and (min-width: 3000px) and (max-width: 3657px){
-	.about-me-section, .contact-me-section{
-		margin:auto;
-	width:35%;} */
+.my-image-column{
+}
 
+.my-bio{
+}
+
+}
+.about-me-section, .contact-me-section{
+	width:80%;
+	margin:auto;
+	padding:70px 0px 70px 0px;
+}
+
+.contact-me-section{
+			
+}
 
 .footerContainerbottom{
     margin:auto;
